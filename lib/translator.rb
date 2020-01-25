@@ -11,7 +11,7 @@ def load_library(file_path)
     english = value[0]
     japanese = value[1]
     new_hash["get_meaning"][japanese] = meaning
-    new_hash["get_emoticon"][english] = meaning
+    new_hash["get_emoticon"][english] = japanese
   end 
   new_hash
 end
