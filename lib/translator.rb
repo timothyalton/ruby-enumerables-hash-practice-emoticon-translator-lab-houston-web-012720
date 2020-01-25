@@ -7,9 +7,9 @@ def load_library(file_path)
     "get_meaning": {},
     "get_emoticon": {}
   }
-  emoticon_file.each do |meaning, value|
-    english = value[0]
-    japanese = value[1]
+  emoticon_file.each do |meaning, value| # key = meaning (ex. "surprise") value = jap/english emots
+    english = value[0] #english emote
+    japanese = value[1] #japanese emote
     new_hash["get_meaning"][japanese] = meaning
     new_hash["get_emoticon"][english] = japanese
   end 
